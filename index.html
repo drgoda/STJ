@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Savouring the Journey – A Life of Taste</title>
+    <meta name="description" content="Savouring the Journey – A Life of Taste. A life story and culinary journey with 30 recipes, personal stories, and photographs." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="/" />
+
+    <meta property="og:title" content="Savouring the Journey – A Life of Taste" />
+    <meta property="og:description" content="A warm celebration of food, family, and memory — 30 recipes woven through a life well savoured." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/images/Front.png" />
+    <meta property="og:url" content="/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Savouring the Journey – A Life of Taste" />
+    <meta name="twitter:description" content="A warm celebration of food, family, and memory — 30 recipes woven through a life well savoured." />
+    <meta name="twitter:image" content="/assets/images/Front.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#hero" class="brand">Savouring the Journey</a>
+        <div class="nav-links">
+          <a href="#flipbook">Preview</a>
+          <a href="#about">About the Book</a>
+          <a href="#author">About</a>
+          <a href="#contact" class="cta">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="hero-inner">
+          <div class="hero-media">
+            <img src="/assets/images/Front.png" alt="Savouring the Journey – Front Cover" class="hero-cover" />
+          </div>
+          <div class="hero-copy">
+            <h1 class="title">Savouring the Journey – A Life of Taste</h1>
+            <p class="tagline">A warm celebration of food, family, and memory — 30 recipes woven through a life well savoured.</p>
+            <div class="hero-actions">
+              <a href="#flipbook" class="button primary">Preview the Book</a>
+              <a href="#about" class="button subtle">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flippable Book Section -->
+      <section id="flipbook" class="flipbook-section">
+        <div class="section-header">
+          <h2>Preview the Book</h2>
+          <p>Turn the pages and explore selected moments from the journey.</p>
+        </div>
+        <div class="flipbook-wrapper">
+          <div id="flipbook-root" class="flipbook-root" aria-label="Book preview" role="region"></div>
+          <div class="flipbook-controls">
+            <button id="prevPage" class="button">Previous</button>
+            <div class="page-indicator" id="pageIndicator">Page 1</div>
+            <button id="nextPage" class="button">Next</button>
+          </div>
+        </div>
+        <noscript>
+          JavaScript is required to view the interactive preview.
+        </noscript>
+      </section>
+
+      <!-- About the Book Section -->
+      <section id="about" class="about-section">
+        <div class="section-header">
+          <h2>About the Book</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              This book captures the life story and culinary journey of a person I know very well,
+              featuring 30 recipes intertwined with personal stories and photographs. It is a love letter to the meals that bring us together and the memories that linger long after the plates are cleared.
+            </p>
+            <p>
+              Crafted with warmth and care, each chapter pairs a heartfelt vignette with a dish to savour — inviting you into a kitchen rich with tradition, nostalgia, and the simple joy of cooking for the ones we love.
+            </p>
+          </div>
+          <div class="about-media">
+            <img src="/assets/images/Back.png" alt="Back cover" class="about-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Author Section -->
+      <section id="author" class="author-section">
+        <div class="section-header">
+          <h2>About the Author</h2>
+        </div>
+        <div class="author-content">
+          <p>
+            Rooted in a lifetime of shared meals and meaningful moments, the author’s culinary voice is intimate and generous.
+            With a knack for storytelling, they invite readers to linger — to savour — and to discover the recipes that shaped a life of taste.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="section-header">
+          <h2>Stay in touch</h2>
+          <p>Interested in the book or upcoming events? Reach out below.</p>
+        </div>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="form-row">
+            <label>
+              <span>Name</span>
+              <input name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="button primary">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Savouring the Journey — A Life of Taste</p>
+    </footer>
+
+    <!-- External libs: PDF.js and StPageFlip -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.min.js" integrity="sha512-PXrQd9YJ2bDiM4cP9r6TSwC3DIp6Eo3sNgG+r7h4DgJ3q3o7Vt5Suq5CTD9Hr9x5oQH0WwEu0sY0Z3f0a5+iig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/st-pageflip@2.0.8/dist/css/stpageflip.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/st-pageflip@2.0.8/dist/js/stpageflip.min.js"></script>
+
+    <!-- App script -->
+    <script src="/script.js" defer></script>
+  </body>
+</html>

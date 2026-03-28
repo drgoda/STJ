@@ -1,0 +1,1 @@
+window.BOOK_PDF_BASE64=+b+;
